@@ -56,7 +56,7 @@ module.exports.run = async function({ api, event, args }) {
     const tempMsg = await sendTemp(api, threadID, "🔍 Analyzing image...");
 
     try {
-      const { data } = await axios.get('https://arychauhann.onrender.com/api/gemini-proxy', {
+      const { data } = await axios.get('http://65.109.80.126:20409/aryan/gemini', {
         params: {
           prompt: input,
           imgUrl: photoUrl
